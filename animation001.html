@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+  background: rgb(24, 174, 211);
+  background: #0581da;
+} 
+
+@keyframes orbit {
+0% {
+transform: rotate(0deg) translateX(50px) rotate(0deg);
+}
+          100% {
+transform: rotate(360deg) translateX(50px) rotate(-360deg);
+}
+}
+
+.glow {
+  width: 90px;
+  height: 90px;
+  top: 50%;
+  left: 50%;
+  margin: -28px 0 0 -28px;
+  position: absolute;
+  transform-style: preserve-3d;
+  border-radius: 100px;
+  background: radial-gradient(
+    ellipse at center,
+    rgb(255, 255, 255) 0%,
+    rgb(226, 153, 153) 35%,
+    rgb(231, 135, 135) 50%,
+    rgb(240, 84, 94) 65%,
+    rgb(216, 32, 44) 100%
+  );
+  animation: orbit 1s linear infinite;
+}
+</style>
+<body>
+    
+        <div class="glow">
+       <div class="butterfly"></div>
+        </div>
+
+</body>
+</html>
